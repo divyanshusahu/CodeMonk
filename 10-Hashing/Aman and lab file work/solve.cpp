@@ -6,7 +6,7 @@ int main()
 	int n;
 	cin>>n;
 
-	vector<int> total_time[2*100 + 1];
+	vector<int> total_time[2*1000000 + 1];
 
 	for (int i=1; i<=n; i++)
 	{
@@ -15,7 +15,7 @@ int main()
 		total_time[ti+di].push_back(i);
 	}
 
-	for (int i=1; i<= 2*100; i++)
+	for (int i=1; i<= 2*1000000; i++)
 	{
 		if (total_time[i].size())
 		{
